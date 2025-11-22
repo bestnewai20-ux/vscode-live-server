@@ -1,0 +1,86 @@
+
+Blackbox IDEToggle Sidebar
+
+New
+PLANS
+
+
+
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${isUser ? 'user-message' : 'ai-message'}`;
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'message-content';
+                contentDiv.textContent = text;
+                
+                messageDiv.appendChild(contentDiv);
+                chatMessages.appendChild(messageDiv);
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            function handleSend() {
+                const text = chatInput.value.trim();
+                if (text) {
+                    addMessage(text, true);
+                    chatInput.value = '';
+                    
+                    // Simulate AI response after a short delay
+                    setTimeout(() => {
+                        addMessage("Thanks for your message! In a real implementation, I would provide a helpful response to: '" + text + "'", false);
+                    }, 1000);
+                }
+            }
+            
+            sendButton.addEventListener('click', handleSend);
+            
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    handleSend();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+create a website for AI assistant
+
+Copy message
+Edit message
+blackbox/encrypted
+
+AI Assistant Website
+I'll create a modern, responsive website for an AI assistant with key sections and interactive elements. Here's a complete implementation:
+
+html
+678 lines
+Copy code
+Download code
+Click to close
+<!DOCTYPE html>
+<html lang="en">
+...
+This website includes:
+
+Modern Design - Clean layout with gradient accents and smooth animations
+
+Responsive Layout - Works on mobile, tablet, and desktop devices
+
+Key Sections:
+
+Hero section with call-to-action
+Feature showcase with icons
+Interactive AI demo chat
+Pricing plans
+Footer with site links
+Interactive Elements:
+
+Functional chat demo that responds to user input
+Hover effects on buttons and cards
+Smooth scrolling navigation
+You can copy this code into an HTML file and open it directly in any browser to see the fully functional website.
+
+Copy message
+Upgrade
